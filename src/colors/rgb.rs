@@ -1,4 +1,4 @@
-use crate::colors::{ansi::ColorAnsi, hsl::HSLColor, hsv::HSVColor, ColorComponent, ColorComponentConvert, Error};
+use crate::colors::{ansi::ColorAnsi, hsl::HSLColor, ColorComponent, ColorComponentConvert, Error};
 use rand::Rng;
 
 use super::ComplementaryColors;

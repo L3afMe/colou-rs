@@ -123,17 +123,17 @@ fn complementary_colors(colors: Vec<RGBColor>) {
             \n │  {}  │ │  {}  │\
             \n ╰───────────╯ │  {}  │\
             \n ╭───────────╮ ╰───────────╯\
-            \n │ {} │ ╭───────────╮\
-            \n │  {}  │ │   {}  │\
-            \n │  {}  │ │  {}  │\
-            \n │  {}  │ │  {}  │\
-            \n ╰───────────╯ │  {}  │\
-            \n ╭───────────╮ │  {}  │\
-            \n │   {}   │ │  {}  │\
-            \n │  {}  │ │  {}  │\
-            \n │  {}  │ │  {}  │\
-            \n │  {}  │ │  {}  │\
-            \n ╰───────────╯ ╰───────────╯",
+            \n │ {} │\
+            \n │  {}  │\
+            \n │  {}  │\
+            \n │  {}  │\
+            \n ╰───────────╯\
+            \n ╭───────────╮\
+            \n │   {}   │\
+            \n │  {}  │\
+            \n │  {}  │\
+            \n │  {}  │\
+            \n ╰───────────╯",
             ulb.paint(format!("Complementary color for {}", color.to_hex())),
             ul.paint("Triad"),     ul.paint("Tetradic"),
             triad[0].paint_hex(),  tetradic[0].paint_hex(),
@@ -141,14 +141,14 @@ fn complementary_colors(colors: Vec<RGBColor>) {
             triad[2].paint_hex(),  tetradic[2].paint_hex(),
                                    tetradic[3].paint_hex(),
             ul.paint("Analogous"), 
-            anal[0].paint_hex(),   ul.paint("Shades"),
-            anal[1].paint_hex(),   anal[0].paint_hex(),
-            anal[2].paint_hex(),   anal[0].paint_hex(),
-                                   anal[0].paint_hex(),
-            ul.paint("Split"),     anal[0].paint_hex(),
-            s_comp[0].paint_hex(), anal[0].paint_hex(),
-            s_comp[1].paint_hex(), anal[0].paint_hex(),
-            s_comp[2].paint_hex(), anal[0].paint_hex(),
+            anal[0].paint_hex(),   
+            anal[1].paint_hex(),   
+            anal[2].paint_hex(),   
+                                   
+            ul.paint("Split"),     
+            s_comp[0].paint_hex(), 
+            s_comp[1].paint_hex(), 
+            s_comp[2].paint_hex(), 
         );
     }
 }
